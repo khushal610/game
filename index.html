@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="display" id="display">
+            <button type="button" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="ImgBack">
+            <!-- <img src="360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg" height="100%" width="100%"> -->
+        </div>
+        <div class="box_1">
+            <p>Guess the Number between 1 to 100.</p>
+        </div>
+        <div class="box_2">
+            <input type="number" min="0" max="100" placeholder="Type here your Guess number" class="i1" id="inputNumber" onchange="fun3()">
+            <div class="hint_box">
+                <p class="hint_msg">HINT <i class="fa-solid fa-lightbulb" style="color: #dffc04;"></i></p>
+                <div class="msg_box">
+                    <p id="p1"></p>
+                </div>
+            </div>
+            <div class="attempt">
+                <p id="chanse"></p>
+            </div>
+            <div class="btn_box">
+                <button type="button" class="btn" onclick="fun1()">Reset</button>
+                <button type="button" class="btn" onclick="fun3()" id="play">Match</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

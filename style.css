@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Sofia Sans', sans-serif;
+}
+body{
+    height:100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.container{
+    height: 90%;
+    width: 80%;
+    background: lightblue;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display{
+    height:100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top:0%;
+    left: 0%;
+    z-index: 2;
+    display: none;
+    background-image: url('841bc0cec76cedec84168a6dc367f870.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#closeBtn{
+    padding: 2px 5px;
+    font-size: 20px;
+    color: white;
+    border-radius: 7px;
+    background-color: black;
+    border:1px solid white;
+    cursor: pointer;
+    position: absolute;
+    right:2%;
+    top:3%;
+}
+.ImgBack{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    background-image: url('360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box_1{
+    height:20rem;
+    width: 50%;
+    /* background: linear-gradient(120deg,red,purple,gold); */
+    background-color: rgba(0,0,0,0.7);
+    display: grid;
+    place-items: center;
+    padding: 10px 10px;
+    position: relative;
+    opacity: 0.9;
+}
+.box_2{
+    height:20rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+p{
+    color:white;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.i1{
+    height:25px;
+    width: 250px;
+    border-radius: 7px;
+    border:1px solid rgb(26, 106, 234);
+    outline: none;
+    padding: 5px;
+}
+::placeholder{
+    color: rgb(26, 106, 234);
+    font-size: 16px;
+}
+.attempt{
+    height:40px;
+    width: 70%;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+}
+#chanse{
+    color:black;
+    font-size: 18px;
+}
+.btn{
+    height:35px;
+    width: 100px;
+    border:2px solid rgb(26, 106, 234);
+    background-color: white;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(26, 106, 234);
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(26, 106, 234);
+    color: white;
+    cursor: pointer;
+}
+.btn_box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hint_box{
+    height:80px;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 7px;
+}
+.hint_msg{
+    font-size: 18px;
+    padding: 5px;
+    position: absolute;
+    top:0%;
+    left:2%;
+    color: black;
+}
+.msg_box{
+    height:50%;
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+    border: 1px solid lightseagreen;
+}
+#p1{
+    font-size: 16px;
+    color:black;
+}
+
+
+
+
+@media (max-width:900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height:80%;
+        padding: 10px;
+    }
+    .btn_box{
+        width: 80%;
+    }
+    .box_2{
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width:700px){
+    .box_1,.box_2{
+        width: 80%;
+    }
+}
+
+@media (max-width:550px){
+    .box_1,.box_2{
+        width: 100%;
+    }
+    .ImgBack{
+        background-image: url('28428412_rm251-mind-16-f.jpg');
+    }
+    p{
+        font-size: 24px;
+        text-align: center;
+    }
+    #chanse{
+        font-size: 16px;
+    }
+}
